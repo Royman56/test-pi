@@ -4,7 +4,8 @@ En Windows:
 
 1. Entrar a esta url: https://github.com/Royman56/test-pi y clonar el proyecto o descargarlo como ZIP
 2. Si lo descargas lo descomprimes y vas a la carpeta back y abres la consola(en el video utilice git bash).
-para introducir el comando npm i y luego lo mismo con la carpeta front y si lo clonas vas a donde quedo guardado el proyecto
+para introducir el comando npm i y luego lo mismo con la carpeta front solo que escribes otro comando que seria
+npm i -g nodemon y si lo clonas vas a donde quedo guardado el proyecto
 abres la consola e introduces el mismo comando con cada una de las carpetas.
 3.Abrir visual studio code y entrar en el archivo .env y cambiar MONGO = colocas tu url de mongo para
 conectarse a la base de datos.
