@@ -44,3 +44,5 @@ Media, Baja, adjunto como debes enviar el body en postman: {
 }
 7. Cuando el proyecto se inicia se abre una pestaña en el navegador con dicho proyecto y ya puedes registrarte para luego 
 iniciar sesión y probar todas las funcionalidades.
+
+//IMPORTANTE: npm i -g nodemon se tiene que instalar en la carpeta back no en front como escribi en el punto 2 de los pasos en windows
