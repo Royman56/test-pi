@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.bg-alta {
+  background-color: red;
+}
+
+.bg-media {
+  background-color: orange;
+}
+
+.bg-baja {
+  background-color: yellow;
+}
+
+.line_through {
+  text-decoration: line-through;
+}
+
+.task {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+}
+.ul>li{
+    list-style: none;
+}
+.ul>li>a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (max-width:200px) {
+    .imgLogo{
+        display: none;
+    }
+    .navContainer{
+        background-color: red;
+        width: 100%;
+    }
+    .ul{
+        position: absolute;
+        top:-100%;
+        transition: top 1s;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: red;
+    }
+    .ul>li{
+        padding: 10px 0;
+    }
+    .btnToggle{
+        z-index: 2;
+        position: relative;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+    .fs-1{
+        font-size: 30px;
+    }
+    .nav{
+        background-color:  red;
+       
+    }
+    .ul>li>a:hover{
+        color: black;
+    }
+    .ul>li>a{
+        color: white;
+    }
+    
+}
+@media screen and (min-width:200px) {
+    .btnToggle{
+        display: none;
+    }
+    .ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ul>li>a:hover{
+        color: red;
+    }
+    .ul>li>a{
+        color: black;
+    }
+    .ul>li{
+        padding: 0 15px;
+    }
+    .nav{
+        padding: 30px;
+        box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    }
+}
