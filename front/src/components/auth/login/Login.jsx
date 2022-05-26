@@ -29,7 +29,6 @@ const Login = () => {
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
       navigate("/");
     } catch (err) {
-      console.log(err);
       dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
     }
   };
@@ -71,7 +70,7 @@ const Login = () => {
                 disabled={loading}
                 onClick={handleClick}
               >
-                Login
+                Iniciar Sesión
               </button>
               {error && <span>{error.message}</span>}
             </div>
