@@ -1,5 +1,7 @@
 #test Pi Interactiva Correr el proyecto
 
+//IMPORTANTE: npm i -g nodemon se tiene que instalar en la carpeta back no en front como escribi en el punto 2 de los pasos en windows
+
 En Windows:
 
 1. Entrar a esta url: https://github.com/Royman56/test-pi y clonar el proyecto o descargarlo como ZIP
@@ -44,5 +46,3 @@ Media, Baja, adjunto como debes enviar el body en postman: {
 }
 7. Cuando el proyecto se inicia se abre una pestaña en el navegador con dicho proyecto y ya puedes registrarte para luego 
 iniciar sesión y probar todas las funcionalidades.
-
-//IMPORTANTE: npm i -g nodemon se tiene que instalar en la carpeta back no en front como escribi en el punto 2 de los pasos en windows
