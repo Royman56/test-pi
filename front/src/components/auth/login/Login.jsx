@@ -25,9 +25,13 @@ const Login = () => {
     e.preventDefault();
     try {
       dispatch({ type: "LOGIN_START" });
-      const res = await axios.post("http://localhost:8800/login", credentials);
-      dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
-      navigate("/");
+      const res = await axios.post("http://localhost:8800/login", credentials);      
+      if (res.data.success) {
+        dispatch({ type: "LOGIN_SUCCESS", payload: res.data.body.details });
+        navigate("/");
+      } else {
+        dispatch({ type: "LOGIN_FAILURE" });
+      }
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
     }
