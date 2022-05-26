@@ -25,7 +25,7 @@ const TasksDone = () => {
 
   const deleteTask = (id) => {
     return axios
-      .delete("http://localhost:8800/task/" + id)
+      .delete("http://localhost:8800/task/delete-task/" + id)
       .then(function (response) {
         findTasks();
       })

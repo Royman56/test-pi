@@ -23,12 +23,13 @@ const Login = () => {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    dispatch({ type: "LOGIN_START" });
     try {
+      dispatch({ type: "LOGIN_START" });
       const res = await axios.post("http://localhost:8800/login", credentials);
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
       navigate("/");
     } catch (err) {
+      console.log(err);
       dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
     }
   };

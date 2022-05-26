@@ -1,0 +1,4 @@
+1. Descargar en github como zip
+2. descomprimir
+3. entrar en carpeta back y entrar en la consola
+4. en consola se coloca npm i 
